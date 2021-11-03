@@ -32,8 +32,17 @@ The `docs` folder includes:
 - A screenshot of configured AWS Elastic Beanstalk Environment variables
 - A 'Hosted Fullstack Application' diagram
 
+The link to the hosted EB api:
+[http://udagramapinode12-env.eba-pbjyxrkj.us-east-1.elasticbeanstalk.com/](http://udagramapinode12-env.eba-pbjyxrkj.us-east-1.elasticbeanstalk.com/)
+
 The link to the hosted Front-End Application is:
 [http://udagram-ew.s3-website-us-east-1.amazonaws.com/](http://udagram-ew.s3-website-us-east-1.amazonaws.com/)
+
+### Trying the FE app
+To test data storing and retrieving is functioning:
+1. Navigate to  [http://udagram-ew.s3-website-us-east-1.amazonaws.com/](http://udagram-ew.s3-website-us-east-1.amazonaws.com/)
+2. Register clicking the 'register' button, provide name, email, password
+3. Log out and log in to test functionality
 
 ### Installation
 
