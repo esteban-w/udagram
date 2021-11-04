@@ -2,6 +2,7 @@
 
 This application is provided by Udacity in the Fullstack Javascript program as a base project for the 'Hosting a Full-Stack Application' assigment. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
+
 ## Getting Started
 
 1. Clone this repo locally into the location of your choice.
@@ -23,7 +24,18 @@ Each project (udagram-api and udagram-frontend) can be installed and run, but th
 
 ```
 
-### Hosting Assigment
+### Installation
+
+Provision the necessary AWS services needed for running the application:
+
+1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
+1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
+1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
+1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
+1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+
+
+## Hosting Assigment
 The `docs` folder includes:
 - A screenshot of last build in CircleCi
 - A screenshot of configured database AWS RDS
@@ -38,21 +50,15 @@ The link to the hosted EB api:
 The link to the hosted Front-End Application is:
 [http://udagram-ew.s3-website-us-east-1.amazonaws.com/](http://udagram-ew.s3-website-us-east-1.amazonaws.com/)
 
+### Project's build badge
+[![esteban-w](https://circleci.com/gh/esteban-w/udagram.svg?style=svg)](https://app.circleci.com/pipelines/github/esteban-w/udagram)
+
 ### Trying the FE app
 To test data storing and retrieving is functioning:
 1. Navigate to  [http://udagram-ew.s3-website-us-east-1.amazonaws.com/](http://udagram-ew.s3-website-us-east-1.amazonaws.com/)
 2. Register clicking the 'register' button, provide name, email, password
 3. Log out and log in to test functionality
 
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
 
 ## Testing
 
