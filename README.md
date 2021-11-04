@@ -24,7 +24,7 @@ Each project (udagram-api and udagram-frontend) can be installed and run, but th
 
 ```
 
-### Installation
+### Local Installation
 
 Provision the necessary AWS services needed for running the application:
 
@@ -43,6 +43,10 @@ The `docs` folder includes:
 - A screenshot of configured AWS Elastic Beanstalk General view
 - A screenshot of configured AWS Elastic Beanstalk Environment variables
 - A 'Hosted Fullstack Application' diagram
+- A 'Pipeline Overview' diagram
+- An App Dependencies document
+- An Infrastructure Description document
+- A Pipeline Process document
 
 The link to the hosted EB api:
 [http://udagramapinode12-env.eba-pbjyxrkj.us-east-1.elasticbeanstalk.com/](http://udagramapinode12-env.eba-pbjyxrkj.us-east-1.elasticbeanstalk.com/)
@@ -53,28 +57,27 @@ The link to the hosted Front-End Application is:
 ### Project's build badge
 [![esteban-w](https://circleci.com/gh/esteban-w/udagram.svg?style=svg)](https://app.circleci.com/pipelines/github/esteban-w/udagram)
 
-### Trying the FE app
+### Checking FE app functionality
 To test data storing and retrieving is functioning:
 1. Navigate to  [http://udagram-ew.s3-website-us-east-1.amazonaws.com/](http://udagram-ew.s3-website-us-east-1.amazonaws.com/)
 2. Register clicking the 'register' button, provide name, email, password
 3. Log out and log in to test functionality
 
 
-## Testing
+### Testing applications
 
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
+This project contains two different scripts to run tests:
+- for Backend API application (pending to be added), from root folder run:
+  `npm run backend:tests`
+- for Frontend application (unit tests and End-To-End tests), from root folder run:
+  `npm run frontend:tests`
 
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
 
-There are no Unit test on the back-end
-
-### Unit Tests:
+### Frontend Unit Tests:
 
 Unit tests are using the Jasmine Framework.
 
-### End to End Tests:
+### Frontend End to End Tests:
 
 The e2e tests are using Protractor and Jasmine.
 
