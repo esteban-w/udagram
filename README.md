@@ -41,7 +41,7 @@ The `docs` folder includes:
 - A screenshot of configured database AWS RDS
 - A screenshot of configured AWS S3
 - A screenshot of configured AWS Elastic Beanstalk General view
-- A screenshot of configured AWS Elastic Beanstalk Environment variables
+- A screenshot of configured CircleCI Environment variables
 - A 'Hosted Fullstack Application' diagram
 - A 'Pipeline Overview' diagram
 - An App Dependencies document
